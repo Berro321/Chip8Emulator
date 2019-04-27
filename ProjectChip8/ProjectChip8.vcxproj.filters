@@ -13,16 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\tests">
+      <UniqueIdentifier>{a2e7babb-bca8-46dd-bedd-16f5648cc6c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Emulator.cpp">
+    <ClCompile Include="chip8emulator.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Chip8.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="tests\chip8runall.cc">
+      <Filter>Source Files\tests</Filter>
     </ClCompile>
-    <ClCompile Include="UnitTests.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="tests\chip8loadtests.cc">
+      <Filter>Source Files\tests</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tests\chip8loadtests.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="chip8emulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

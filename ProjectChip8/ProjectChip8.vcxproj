@@ -18,6 +18,15 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="chip8emulator.cc" />
+    <ClCompile Include="tests\chip8loadtests.cc" />
+    <ClCompile Include="tests\chip8runall.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="chip8emulator.h" />
+    <ClInclude Include="tests\chip8loadtests.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{E3E5E081-091F-4C3B-9D5C-E0EFB9F55E14}</ProjectGuid>
@@ -114,11 +123,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Chip8.cpp" />
-    <ClCompile Include="Emulator.cpp" />
-    <ClCompile Include="UnitTests.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
